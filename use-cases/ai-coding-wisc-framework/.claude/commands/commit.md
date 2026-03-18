@@ -6,7 +6,9 @@ description: Create an atomic commit for current changes
 
 ## Process
 
-### 1. Review Changes
+### 1. Create a new branch with a 1-2 word name related to what was changed
+
+### 2. Review Changes
 
 ```bash
 git status
@@ -19,7 +21,7 @@ Check for new untracked files:
 git ls-files --others --exclude-standard
 ```
 
-### 2. Stage Files
+### 3. Stage Files
 
 Add the untracked and changed files relevant to the current work.
 
@@ -28,7 +30,7 @@ Add the untracked and changed files relevant to the current work.
 - Large binary files
 - Files unrelated to the current task
 
-### 3. Create Commit
+### 4. Create Commit
 
 Write an atomic commit message with a conventional commit tag:
 
@@ -58,7 +60,9 @@ obvious from the diff.]
 [Optional: Fixes #123, Closes #456]
 ```
 
-### 4. Capture AI Context Changes
+### 5. Push the new branch and create a pull request
+
+### 6. Capture AI Context Changes
 
 If any AI context assets were modified in this commit, add a `Context:` section to the commit body:
 
